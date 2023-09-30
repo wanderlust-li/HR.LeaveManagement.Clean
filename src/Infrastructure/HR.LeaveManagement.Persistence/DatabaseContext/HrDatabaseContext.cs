@@ -21,7 +21,6 @@ public class HrDatabaseContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(HrDatabaseContext).Assembly);
-
         // modelBuilder.ApplyConfiguration(new LeaveTypeConfiguration());
         
         base.OnModelCreating(modelBuilder);
