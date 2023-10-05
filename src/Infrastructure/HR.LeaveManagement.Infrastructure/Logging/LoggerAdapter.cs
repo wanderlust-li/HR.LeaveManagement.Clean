@@ -20,4 +20,6 @@ public class LoggerAdapter<T> : IAppLogger<T>
     {
         _logger.LogWarning(message, args);
     }
+    
+    
 }
