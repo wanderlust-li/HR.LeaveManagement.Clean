@@ -5,7 +5,6 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
 
 public class CreateLeaveTypeCommand : IRequest<int>
 {
-    // [Required]
     public string Name { get; set; } = string.Empty;
     
     public int DefaultDays { get; set; }
