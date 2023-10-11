@@ -4,7 +4,7 @@ namespace HR.LeaveManagement.Application.Contracts.Identity;
 
 public interface IAuthService
 {
-    Task<List<Employee>> GetEmployees();
+    Task<AuthResponse> Login(AuthRequest request);
     
-    Task<Employee> GetEmployee(string userId);
+    Task<RegistrationResponse> Register(RegistrationRequest request);
 }

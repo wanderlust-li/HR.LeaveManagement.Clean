@@ -4,7 +4,7 @@ namespace HR.LeaveManagement.Application.Contracts.Identity;
 
 public interface IUserService
 {
-    Task<AuthResponse> Login(AuthRequest request);
+    Task<List<Employee>> GetEmployees();
     
-    Task<RegistrationResponse> Register(RegistrationRequest request);
+    Task<Employee> GetEmployee(string userId);
 }
